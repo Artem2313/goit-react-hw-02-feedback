@@ -1,9 +1,8 @@
 import React from 'react';
-import items from '../db/publications.json';
-import Reader from './reader/reader';
+import Feedback from './Feedback/Feedback';
 
 const App = () => {
-  return <Reader items={items} />;
+  return <Feedback />;
 };
 
 export default App;
