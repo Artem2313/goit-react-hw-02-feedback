@@ -31,7 +31,11 @@ const MainSection = ({
 MainSection.propTypes = {
   title: PropTypes.string.isRequired,
   handleLeaveFeedback: PropTypes.func.isRequired,
-  options: PropTypes.shape({}).isRequired,
+  options: PropTypes.shape({
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+  }).isRequired,
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,

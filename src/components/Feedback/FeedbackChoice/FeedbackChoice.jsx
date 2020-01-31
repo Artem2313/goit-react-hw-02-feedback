@@ -18,7 +18,11 @@ const FeedbackChoice = ({ options, onLeaveFeedback }) => (
 );
 
 FeedbackChoice.propTypes = {
-  options: PropTypes.shape({}).isRequired,
+  options: PropTypes.shape({
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+  }).isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };
 
